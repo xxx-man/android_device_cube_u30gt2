@@ -1,0 +1,10 @@
+/boot		mtd		boot
+/cache		ext4		/dev/block/mtd/by-name/cache
+/data		ext4		/dev/block/mtd/by-name/userdata
+/kernel		mtd		kernel
+/misc		mtd		misc
+/recovery	mtd		recovery
+/sdcard		vfat		/dev/block/mtd/by-name/user	lun=/sys/class/android_usb/android0/f_mass_storage/lun/file
+/external_sd	vfat		/dev/block/mmcblk0p1		/dev/block/mmcblk0	lun=/sys/class/android_usb/android0/f_mass_storage/lun1/file
+/sd-ext		auto		/dev/block/mmcblk0p2
+/system		ext4		/dev/block/mtd/by-name/system
